@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Command Center Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="nav-bar">
+  <a href="home.html">Home</a>
+  <a href="dashboard.html">Command Center</a>
+</div>
+
+<div class="container">
+
+  <h1>🛡 Command Center Dashboard</h1>
+
+  <div class="panel">
+    <h3>Drone Detection Feed</h3>
+    <p>Object: <span id="object">Waiting...</span></p>
+    <p>Confidence: <span id="confidence">--</span></p>
+  </div>
+
+  <div class="panel">
+    <h3>Threat Level</h3>
+    <p id="threat" class="threat-low">LOW</p>
+  </div>
+
+  <div class="panel">
+    <h3>Operator Controls</h3>
+    <button onclick="alert('Counter Drone Activated!')">Initiate Counter Action</button>
+  </div>
+
+</div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

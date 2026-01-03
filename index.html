@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>National Anti-Drone Command Center</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="nav-bar">
+  <a href="#home">Home</a>
+  <a href="#overview">Overview</a>
+  <a href="#why">Why This Project</a>
+  <a href="#growth">Growth Rate</a>
+  <a href="#dashboard">Command Center</a>
+</div>
+
+<section class="hero" id="home">
+  <h1 class="moving-title">NATIONAL ANTI-DRONE SURVEILLANCE & DEFENCE SYSTEM</h1>
+  <p>Protecting Airspace | Preventing Threats | Saving Lives</p>
+</section>
+
+<section id="overview">
+<h2>Project Overview</h2>
+<p>
+Unauthorized drones are becoming a serious national threat. From airports to defence bases,
+from public rallies to government facilities – rogue drones can perform illegal surveillance,
+smuggling, sabotage or terror attacks. Our Anti-Drone Surveillance System is designed to detect,
+track, classify and neutralize unauthorized drones using smart sensor fusion and AI-driven threat
+analysis.
+
+This project continuously monitors airspace, identifies suspicious UAV movement, evaluates
+risk levels in real time and provides operators with actionable intelligence. It bridges the gap
+between detection and response by offering automated threat escalation indicators and command
+controls to initiate counter-measures. The system can be integrated with RF scanners, radar,
+camera feeds and acoustic sensors, making it adaptable for defence forces, airports, power
+stations, stadiums and border security.
+</p>
+</section>
+
+<section id="why">
+<h2>Why We Chose This Project</h2>
+<p>
+With the rapid increase in drone availability, misuse of UAVs has become extremely easy.
+Traditional security systems are not capable of detecting aerial intrusions at low altitude.
+This project aims to fill that gap by introducing a centralized intelligent monitoring platform.
+
+This solution is useful for military operators, airport authorities, police departments,
+critical infrastructure managers and disaster-response teams. It helps prevent terrorist
+activities, illegal spying, contraband deliveries and ensures civilian safety during large
+public gatherings. This system empowers security agencies to act before threats escalate.
+</p>
+</section>
+
+<section id="growth">
+<h2>Project Growth Rate & Market Adoption</h2>
+<p>
+The global counter-drone market is witnessing exponential growth. Defence ministries,
+civil aviation authorities and smart city planners are rapidly investing in anti-drone
+solutions. This chart shows how different sectors are adopting this technology and how
+future investments are expected to rise across the world.
+</p>
+
+<div class="chart-box">
+<canvas id="growthChart"></canvas>
+</div>
+</section>
+
+<section id="dashboard">
+<h2>Command Center Dashboard</h2>
+
+<div class="panel">
+<h3>Drone Detection Feed</h3>
+<p>Status: Monitoring Airspace...</p>
+</div>
+
+<div class="panel">
+<h3>Threat Level</h3>
+<p id="threat">LOW</p>
+</div>
+
+<div class="panel">
+<h3>Operator Controls</h3>
+<button onclick="alert('Counter Drone Protocol Activated')">Initiate Counter Action</button>
+</div>
+
+</section>
+
+<script src="app.js"></script>
+<script>
+const ctx = document.getElementById('growthChart').getContext('2d');
+new Chart(ctx,{
+  type:'pie',
+  data:{
+    labels:['Military','Airports','Smart Cities','Critical Infrastructure'],
+    datasets:[{
+      data:[40,25,20,15],
+      backgroundColor:['#0b1f33','#1e88e5','#64b5f6','#bbdefb']
+    }]
+  }
+});
+</script>
+
+</body>
+</html>
