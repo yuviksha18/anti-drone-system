@@ -1,0 +1,4 @@
+0 Drone
+1 Aircraft
+2 Bird
+3 Unknown
